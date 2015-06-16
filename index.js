@@ -42,7 +42,7 @@ TravisCIEnv.createFromEnv = function(env) {
 TravisCIEnv.prototype.toTextWidgetValue = function() {
   var passed = (this.testResult === '0');
   var color = passed ? '#78ab49' : '#b84d38';
-  var text = passed ? 'Passed' : 'Failed';
+  var text = passed ? 'Passed & Deployed' : 'Failed';
   var type = passed ? 0 : 1;
   return TextWidgetValue.create({
     text: [
