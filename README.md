@@ -12,5 +12,5 @@ Notify Geckoboard widgets with Travis CI build results
 
 ``` yaml
 before_script: npm install -g https://github.com/orchestrated-io/travis-notify-geckoboard/tarball/v0.1.1
-after-script: travis-notify-geckoboard -a $GECKOBOARD_API_KEY -w $GECKOBOARD_WIDGET_KEY
+after_script: travis-notify-geckoboard -a $GECKOBOARD_API_KEY -w $GECKOBOARD_WIDGET_KEY
 ```
